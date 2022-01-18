@@ -7,4 +7,4 @@
 <h1>Technologies used for this project</h1>
 <p>React, javascript, html, css, hook</p>
 <h1>Screenshot from the app</h1>
-<img href='public/Capture.PNG'>
+<img src='public/Capture.PNG'>
