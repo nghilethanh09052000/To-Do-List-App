@@ -1,18 +1,21 @@
+
 const Todo = ({text, todo, todos, setTodos}) => {
-    const deleteHandle =()=>{
-        setTodos(todos.filter( (i) =>i.id !== todo.id ))
+    //event
+    const deleteHandle = () => {
+        setTodos(todos.filter((el) => el.id !== todo.id))   //check the id of the clicked on
     }
-    const completeHandler =()=>{
-        setTodos(todos.map(item =>{
-            if(item.id ==todo.id){
-                return{
-                    ...item, completed: !item.completed
+    const completeHandler = () => {
+        setTodos(todos.map(item => {
+            if(item.id === todo.id){ //if clicked
+                return {
+                    ...item, completed: !item.completed 
                 }
             }
                 return item
+                     
         }))
     }
-    return ( 
+    return (
         <div className="todo">
             <li className={`todo-item ${todo.completed ? "completed" : ''}`}>{text}</li>
             <button onClick={completeHandler} className="complete-btn">
@@ -22,7 +25,7 @@ const Todo = ({text, todo, todos, setTodos}) => {
                 <i  className="fas fa-trash"></i>
             </button>
         </div>
-     );
+    )
 }
- 
-export default Todo;
+
+export default Todo
