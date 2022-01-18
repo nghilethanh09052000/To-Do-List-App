@@ -7,3 +7,4 @@
 <h1>Technologies used for this project</h1>
 <p>React, javascript, html, css, hook</p>
 <h1>Screenshot from the app</h1>
+![Capture](https://user-images.githubusercontent.com/86466679/149937670-9f437ed9-b642-40d1-ab49-cc547a0cec1f.PNG)
