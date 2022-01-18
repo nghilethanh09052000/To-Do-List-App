@@ -4,7 +4,6 @@ const Form = ({inputText,setInputText,todos,setTodos,setStatus}) => {
     const inputTextHandler =(e) =>{
         setInputText(e.target.value)
     }
-
     const submitTodoHandler =(e) =>{
         e.preventDefault();
         setTodos([
@@ -22,18 +21,19 @@ const Form = ({inputText,setInputText,todos,setTodos,setStatus}) => {
         setStatus(e.target.value)
     }
     return ( 
-        <div className="create">
-        <form>
+    <form>
             <input type="text"
                     required
                     value={inputText}
                     onChange={inputTextHandler}
+                    className="todo-input"
               />
              <button
                 onClick={submitTodoHandler}
                 type="submit"
+                className="todo-button"
              >
-             Add todo
+              <i className="fas fa-plus-square"></i>
              </button>
              <div className="select">
                 <select onChange={statusHandler} name="todos" className="filter-todo">
@@ -41,13 +41,9 @@ const Form = ({inputText,setInputText,todos,setTodos,setStatus}) => {
                     <option value="completed">Completed</option>
                     <option value="uncompleted">Uncompleted</option>
                 </select>
-
-             </div>
-     
-        </form>
-        </div>
-      
-     );
+            </div>
+    </form>
+    );
 }
  
 export default Form;
