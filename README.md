@@ -9,3 +9,4 @@
 <p>React, javascript, html, css, hook</p>
 <h1>Screenshot from the app</h1>
 <img src='public/Capture.PNG'>
+![Capture](https://user-images.githubusercontent.com/86466679/153980795-cba0e9ba-d087-42d4-81b6-67ab4dbadda4.PNG)
